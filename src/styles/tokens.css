@@ -1,0 +1,54 @@
+/* turing. Console 디자인 토큰 — Figma 변수와 1:1. 그라데이션 사용 금지 */
+:root {
+  /* 기본 */
+  --bg-page: #fbfcff;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f8f9fc;
+  --bg-muted: #edeef0;
+  --border: #e5e7e9;
+  --border-strong: #d4d8e8;
+  --text-primary: #0e1220;
+  --text-secondary: #39435a;
+  --text-tertiary: #62646d;
+  --text-caption: #6b7080;
+  --brand-navy: #04044a;
+  --brand-mint: #40e0d0;
+  --brand-mint-text: #087a70;
+  --brand-mint-bg: #f0fdfb;
+  --brand-mint-border: #bff3f0;
+
+  /* 등급·상태 (글자 / 배경) */
+  --grade-good: #052699;
+  --grade-good-bg: #ebf0ff;
+  --grade-fair: #9a5f00;
+  --grade-fair-bg: #fdf3df;
+  --grade-poor: #c62424;
+  --grade-poor-bg: #feecec;
+  --grade-learn: #076b62;
+  --grade-learn-bg: #e3faf7;
+  --badge-unlearn: #e5484d;
+  --badge-watch: #e08a00;
+  --badge-learn: #0e9e91;
+  --badge-done: #8a90a6;
+
+  /* 분야(그래프) */
+  --domain-market: #5da82e;
+  --domain-industry: #1a9fc0;
+  --domain-policy: #b348b8;
+  --domain-memory: #5b6cf0;
+
+  /* 타이포 */
+  --font-sans: 'Pretendard Variable', Pretendard, 'Noto Sans KR', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* 형태 */
+  --radius-card: 16px;
+  --radius-box: 12px;
+  --radius-button: 10px;
+  --radius-pill: 999px;
+  --shadow-tooltip: 0 6px 20px rgba(14, 18, 32, 0.1);
+  --focus-ring: 0 0 0 2px var(--bg-surface), 0 0 0 4px var(--brand-mint);
+
+  --sidebar-width: 232px;
+  --content-max: 1104px;
+}

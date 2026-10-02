@@ -1,0 +1,36 @@
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; font-weight: 600; line-height: 1;
+  padding: 4px 8px; border-radius: var(--radius-pill); white-space: nowrap;
+}
+.badgeSm { font-size: 10px; padding: 3px 7px; }
+.badgeDot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+.tone_good { background: var(--grade-good-bg); color: var(--grade-good); }
+.tone_fair { background: var(--grade-fair-bg); color: var(--grade-fair); }
+.tone_poor { background: var(--grade-poor-bg); color: var(--grade-poor); }
+.tone_learn { background: var(--grade-learn-bg); color: var(--grade-learn); }
+.tone_muted { background: var(--bg-muted); color: var(--text-secondary); }
+
+.card { background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-card); }
+
+.btn {
+  height: 40px; padding: 0 14px; border-radius: var(--radius-button);
+  font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+}
+.btnLg { height: 44px; font-size: 14px; }
+.btnPrimary { border: 0; background: var(--brand-navy); color: #fff; font-weight: 700; }
+.btnPrimary:disabled { opacity: 0.55; cursor: progress; }
+.btnSecondary { border: 1px solid var(--border-strong); background: var(--bg-surface); color: var(--text-primary); }
+.btnSecondary:disabled { opacity: 0.55; cursor: progress; }
+.btnLink {
+  height: 40px; padding: 0 6px; border: 0; background: transparent;
+  font-size: 12px; font-weight: 600; color: var(--grade-good); text-decoration: underline; cursor: pointer;
+}
+
+.toast {
+  position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 50;
+  background: var(--brand-navy); color: #fff; font-size: 13px; padding: 12px 16px; border-radius: var(--radius-button);
+  display: flex; align-items: center; gap: 12px; max-width: calc(100vw - 32px);
+}
+.toast button { border: 0; background: transparent; color: #fff; font-size: 13px; font-weight: 700; cursor: pointer; text-decoration: underline; }

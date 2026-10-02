@@ -1,0 +1,110 @@
+/* ---------- 레이아웃 ---------- */
+.content {
+  width: 100%; max-width: calc(var(--content-max) + 80px); margin: 0 auto;
+  padding: 36px 40px 72px; display: flex; flex-direction: column; gap: 28px;
+}
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+
+.card { background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-card); }
+.cardHead { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.cardTitleRow { display: flex; align-items: center; gap: 8px; }
+.cardTitle { margin: 0; font-size: 15px; font-weight: 700; }
+.cardSub { margin: 4px 0 8px; font-size: 12px; color: var(--text-tertiary); }
+.meta { font-size: 12px; color: var(--text-secondary); }
+.overline { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: var(--text-caption); }
+.up { color: var(--grade-good); }
+.down { color: var(--grade-fair); }
+.upMint { color: var(--brand-mint-text); }
+.downRed { color: var(--grade-poor); }
+.mutedText { color: var(--text-tertiary); }
+
+/* ---------- 헤더 ---------- */
+.header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.headerMain { display: flex; flex-direction: column; gap: 8px; }
+.titleRow { display: flex; align-items: center; gap: 10px; }
+.title { margin: 0; font-size: 30px; font-weight: 800; letter-spacing: -0.03em; }
+.runBadge { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 5px; background: var(--grade-good-bg); color: var(--grade-good); }
+.subtitle { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary); }
+.sep { color: #b9bcc4; }
+.subStrong { font-weight: 600; color: var(--text-primary); }
+.stats { display: flex; gap: 28px; margin: 0; }
+.stat { display: flex; flex-direction: column; gap: 4px; padding-left: 16px; border-left: 2px solid var(--text-primary); }
+.stat dt { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; color: var(--text-secondary); }
+.stat dd { margin: 0; font-size: 22px; font-weight: 800; }
+
+/* ---------- 흐름 ---------- */
+.steps { background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 20px 24px; }
+.stepList { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.step { display: flex; flex-direction: column; gap: 3px; padding-right: 12px; }
+.stepTrack { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; }
+.stepDot {
+  width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700;
+}
+.stepLine { flex-grow: 1; height: 2px; border-radius: 2px; background: var(--border); }
+.stepEng { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; color: var(--text-caption); }
+.stepTitle { font-size: 14px; font-weight: 700; }
+.stepDesc { font-size: 12px; color: var(--text-tertiary); }
+.step_done .stepDot { background: var(--brand-mint); color: #04443e; }
+.step_done .stepLine { background: var(--brand-mint); }
+.step_current .stepDot { background: var(--brand-navy); color: #fff; box-shadow: 0 0 0 5px rgba(4, 4, 74, 0.1); }
+.step_current .stepTitle { color: var(--brand-navy); }
+.step_upcoming .stepDot { background: var(--bg-surface); border: 1.5px solid var(--border-strong); color: var(--text-caption); }
+.step_upcoming .stepTitle { color: var(--text-caption); }
+
+/* ---------- 건강도 ---------- */
+.health { padding: 22px 24px; display: flex; flex-direction: column; gap: 6px; }
+.today { font-size: 12px; font-weight: 600; margin-top: 14px; }
+.healthRow { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
+.healthScore { font-size: 72px; font-weight: 500; line-height: 1; letter-spacing: -0.04em; }
+.healthBubble {
+  display: flex; flex-direction: column; gap: 2px; padding: 8px 12px; margin-bottom: 6px;
+  border: 1px solid var(--border-strong); border-radius: 8px; background: var(--bg-surface);
+}
+.healthBubble b { font-size: 13px; }
+.healthBubble span { font-size: 11px; color: var(--text-tertiary); }
+.healthNote { margin: 10px 0 0; font-size: 12px; color: var(--text-tertiary); }
+
+/* ---------- 제안 목록 ---------- */
+.listCard { padding: 22px 24px; display: flex; flex-direction: column; }
+.countLearn { font-size: 15px; font-weight: 800; color: var(--brand-mint-text); }
+.countUnlearn { font-size: 15px; font-weight: 800; color: var(--grade-poor); }
+.propList { list-style: none; margin: 0; padding: 0; }
+.propItem { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 0; border-top: 1px solid var(--bg-muted); }
+.propText { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.propName { font-size: 14px; font-weight: 700; }
+.propMeta { font-size: 12px; color: var(--text-tertiary); }
+.propBtn { flex-shrink: 0; height: 32px; padding: 0 10px; border: 0; background: transparent; font-size: 12px; font-weight: 600; color: var(--text-primary); cursor: pointer; }
+
+/* ---------- 이력 ---------- */
+.logSection { display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 80px; }
+.logHead { display: flex; align-items: baseline; gap: 8px; }
+.logBox { padding: 18px 20px; font-family: var(--font-mono); font-size: 12.5px; }
+.logList { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.logRow { display: flex; gap: 10px; line-height: 1.6; }
+.logTime { color: var(--text-caption); flex-shrink: 0; }
+.logTag { flex-shrink: 0; width: 72px; font-weight: 500; }
+.tag_DETECT { color: #d92c2c; }
+.tag_PROPOSE { color: var(--grade-fair); }
+.tag_APPROVE { color: var(--grade-good); }
+.tag_LEARN { color: var(--brand-mint-text); }
+.tag_UNLEARN, .tag_DEFER, .tag_UNDO { color: var(--text-tertiary); }
+.moreBtn {
+  margin-top: 12px; height: 36px; padding: 0 12px; border: 1px solid var(--border-strong); border-radius: 8px;
+  background: var(--bg-surface); font-family: var(--font-sans); font-size: 12px; font-weight: 600; cursor: pointer;
+}
+
+/* ---------- 반응형 ---------- */
+@media (max-width: 1279px) and (min-width: 820px) {
+  .content { padding: 28px 28px 64px; }
+}
+@media (max-width: 819px) {
+  .content { padding: 20px 16px 48px; gap: 20px; }
+  .cards { grid-template-columns: minmax(0, 1fr); }
+  .steps { padding: 16px; overflow-x: auto; }
+  .stepList { grid-template-columns: repeat(5, minmax(150px, 1fr)); }
+  .title { font-size: 24px; }
+  .stats { gap: 20px; }
+  .logRow { flex-wrap: wrap; column-gap: 8px; row-gap: 0; }
+  .logTag { width: auto; }
+}
